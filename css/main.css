@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Aubrey|Delius|Lato");
-body h1 {
-  font-family: 'Aubrey', cursive; }
-body h2, body h3, body h4, body h5, body h6 {
-  font-family: 'Delius', cursive; }
-body p {
-  font-family: 'Lato', sans-serif; }
-body .article {
+h1 {
+  font-family: "Aubrey", cursive; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Delius", cursive; }
+
+p, a {
+  font-family: "Lato", sans-serif; }
+
+.article {
   max-width: 160px;
   width: 100%;
   height: 60px;
@@ -16,24 +19,24 @@ body .article {
   transition: 1s ease all;
   background-size: cover;
   background-repeat: no-repeat; }
-  body .article div {
+  .article div {
     width: 50%;
     height: 100%;
     float: left;
     transition: 1s ease all; }
-    body .article div.img {
+    .article div.img {
       background-image: url(http://img12.deviantart.net/cfa2/i/2015/247/8/e/the_view_by_xlocky-d988pnv.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
-      body .article div.img.hidden {
+      .article div.img.hidden {
         width: 100%; }
-    body .article div.text.hidden {
-      width: 0;
-      opacity: 0; }
-  body .article:hover {
+    .article div.text.hidden {
+      opacity: 0;
+      width: 0; }
+  .article:hover {
     cursor: pointer; }
-  body .article.open {
+  .article.open {
     max-width: 580px;
     height: 270px; }
 

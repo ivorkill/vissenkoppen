@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $(document).mousedown(function(event){
-    if (event.target != article){
+    if (event.target != article && $(event.target).prop("tagName") != "A"){
       $(".article").not($(event.target).parent()).removeClass("open");
       $(".article").not($(event.target).parent()).children().addClass("hidden");
     }

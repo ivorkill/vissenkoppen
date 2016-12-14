@@ -4,5 +4,9 @@
 // font-family: 'Aubrey', cursive;
 @import url('https://fonts.googleapis.com/css?family=Aubrey|Delius|Lato');
 
-// components
-@import "components/article.scss"
+// Components
+@import "components/variables.scss";
+@import "components/head.scss";
+@import "components/article.scss";
+// Queries
+@import "components/queries.scss";
