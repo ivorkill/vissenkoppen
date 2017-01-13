@@ -1,40 +1,48 @@
-.article{
-  max-width: $WidthSmall;
-  width: 100%;
-  height: $HeightSmall;
-  overflow: hidden;
-  background-color: $Color6;
-  margin: 60px auto;
-  display: block;
-  transition: 1s ease all;
-  background-size: cover;
-  background-repeat: no-repeat;
-  div{
-    width: 50%;
-    height: 100%;
-    float: left;
+.container{
+  height: auto;
+  .article:first-of-type{
+    margin: 20px auto;
+  }
+  .article{
+    max-width: $WidthSmall;
+    width: 100%;
+    height: $HeightSmall;
+    overflow: hidden;
+    margin: 60px auto;
+    display: block;
     transition: 1s ease all;
-    &.img{
-      background-image: url(http://img12.deviantart.net/cfa2/i/2015/247/8/e/the_view_by_xlocky-d988pnv.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      &.hidden{
-        width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    div{
+      h1{
+        margin: 0;
+        line-height: $LineHeight;
+      }
+      width: $SlideWidthSmall;
+      height: 100%;
+      transition: 1s ease all;
+      &.img{
+        background-image: url('http://img12.deviantart.net/cfa2/i/2015/247/8/e/the_view_by_xlocky-d988pnv.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        float: left;
+      }
+      &.text{
+        background-color: $Color6;
+        float: right;
       }
     }
-    &.text{
-      &.hidden{
-        opacity: 0;
-        width: 0;
+    &:hover{
+      cursor:pointer;
+    }
+    &.open{
+      max-width: $WidthBig;
+      height: $HeightBig;
+      div{
+        margin-right: 0px;
+        width: $SlideWidthBig;
       }
     }
-  }
-  &:hover{
-    cursor:pointer;
-  }
-  &.open{
-    max-width: $WidthBig;
-    height: $HeightBig;
   }
 }
