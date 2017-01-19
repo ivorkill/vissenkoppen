@@ -1,35 +1,40 @@
 .article{
-  max-width: 160px;
-  width: 60vw;
-  height: 45px;
+  max-width: $WidthSmall;
+  width: 100%;
+  height: $HeightSmall;
   overflow: hidden;
-  margin: 50px auto;
+  background-color: $Color6;
+  margin: 60px auto;
   display: block;
-  background-color: blue;
   transition: 1s ease all;
-  background-image: url(http://img12.deviantart.net/cfa2/i/2015/247/8/e/the_view_by_xlocky-d988pnv.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   div{
     width: 50%;
     height: 100%;
+    float: left;
     transition: 1s ease all;
-    img{
-      width: 100%;
-      height: 100%;
+    &.img{
+      background-image: url(http://img12.deviantart.net/cfa2/i/2015/247/8/e/the_view_by_xlocky-d988pnv.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      &.hidden{
+        width: 100%;
+      }
     }
-    &.hidden{
-      // opacity: 0;
+    &.text{
+      &.hidden{
+        opacity: 0;
+        width: 0;
+      }
     }
   }
   &:hover{
     cursor:pointer;
   }
-  &.background{
-    background-color: red;
-  }
   &.open{
-    max-width: 540px;
-    height: 270px;
+    max-width: $WidthBig;
+    height: $HeightBig;
   }
 }

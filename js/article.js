@@ -1,19 +1,14 @@
-window.addEventListener("load",function(){
-  window.addEventListener("mousedown",function(event){
-    // if (event.target != article){
-    //   var length = window.getElementsByClassName('article').length;
-    //   for(i = 0; i < length; i++){
-    //
-    //   }
-    // }
-    var article = event.target;
-    var dataId = article.getAttribute("data-id");
-    if(hasClass(article,"article")){
-      article.classList.toggle("open");
-      article.getElementsByTagName('div')[0].classList.toggle("hidden");
+$(document).ready(function(){
+  $(document).mousedown(function(event){
+    if (event.target != article && $(event.target).prop("tagName") != "A"){
+      $(".article").not($(event.target).parent()).removeClass("open");
+      $(".article").not($(event.target).parent()).children().addClass("hidden");
+    }
+    var article = $(event.target).parent();
+    var dataId = $(article).data("id");
+    if($(article).hasClass("article")){
+      $(article).toggleClass("open");
+      $(article).children().toggleClass("hidden");
     }
   });
 });
-function hasClass(element, cls) {
-    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
-}
