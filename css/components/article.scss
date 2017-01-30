@@ -13,16 +13,20 @@
     transition: 1s ease all;
     background-size: cover;
     background-repeat: no-repeat;
+    &:last-child{
+      margin-bottom: 20px;
+    }
     div{
       h1{
         margin: 0;
+        font-size: 18px;
         line-height: $LineHeight;
       }
-      width: $SlideWidthSmall;
+      max-width: $SlideWidthSmall;
+      width: 50%;
       height: 100%;
       transition: 1s ease all;
       &.img{
-        background-image: url('http://img12.deviantart.net/cfa2/i/2015/247/8/e/the_view_by_xlocky-d988pnv.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -38,10 +42,11 @@
     }
     &.open{
       max-width: $WidthBig;
+      width: 100%;
       height: $HeightBig;
       div{
         margin-right: 0px;
-        width: $SlideWidthBig;
+        max-width: $SlideWidthBig;
       }
     }
   }

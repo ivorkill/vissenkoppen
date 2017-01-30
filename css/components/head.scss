@@ -3,13 +3,13 @@
 	padding: 0;
 }
 body{
-	background-image:url("../img/bg.png");
+	background-image:url("../images/bg_vis_1.png");
 	background-size: 100%;
-  background-repeat: repeat;
+	background-attachment: fixed;
 }
 h1{
   font-family: 'Delius', cursive;
-  font-size: 18px;
+  font-size: 40px;
   text-align: center;
 }
 h2,h3,h4,h5,h6{
@@ -18,5 +18,5 @@ h2,h3,h4,h5,h6{
 }
 p,a{
   font-family: $Lato, sans-serif;
-  padding: 10px;
+  // padding: 10px;
 }

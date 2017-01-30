@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var article,number,container;
-  h1Check();
+  // h1Check();
   $(document).mousedown(function(event){
     article = $(event.target);
 
@@ -11,7 +11,11 @@ $(document).ready(function(){
       $(container).children().toggleClass("hidden");
       $(".article").not(container).removeClass("open");
       $(".article").not(container).children().addClass("hidden");
+      // console.log(article);
+      // $(container).children(".text").children("h1").css("line-height","60px");
+      // $(".article").not(container).children(".text").children("h1").css("line-height","30px");
     }
+    // console.log($(article).parent().data("content"));
   });
   $(document).keydown(function(event){
     if (event.keyCode == 9) {
@@ -21,12 +25,4 @@ $(document).ready(function(){
   $(document).resize(function(){
     // h1Check();
   });
-  function h1Check(){
-    var h1Height = $(".text").children("h1");
-    for (var i = 0; i <   $(".text").children("h1").length; i++) {
-      if (parseInt($(h1Height).slice(i).outerHeight()) > 60) {
-        $(".text").children("h1").slice(i,(i+1)).css("line-height","30px");
-      }
-    }
-  }
 });

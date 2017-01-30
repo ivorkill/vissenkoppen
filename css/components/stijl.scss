@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+.title{
+	color: $Color6;
+}
+.back{
+	width: 300px;
+	height: 150px;
+	background-image: url("../images/terug_1.png");
+	transition: ease 1s all;
+	background-size: contain;
+	margin: 0px;
+	&:hover{
+		background-image: url("../images/terug_2.png");
+	}
+}
+.container2{
+	max-width: 1400px;
+	margin: auto;
+	padding: 50px;
+	height: 800px;
+	.kaders{
+		max-width: 630px;
+		width: 630px;
+		float: left;
+		.image{
+			padding: 5px;
+			float: left;
+			width: 200px;
+			height: 115px;
+			overflow: hidden;
+			img{
+				width: 200px;
+			}
+			&:first-child{
+				width: 620px;
+				height: 345px;
+				img{
+					width: 620px;
+				}
+			}
+		}
+	}
+	.tekst{
+		max-width: 630px;
+		width: 630px;
+		padding: 40px;
+		margin-top: 7px;
+		margin-left: 50px;
+		float: left;
+		background-color: rgba(255,255,255,0.73);
+		overflow: auto;
+		height: 600px;
+		font-size: 18px;
+		line-height: 23px;
+	}
+}
+@media (max-width: 1500px) {
+	.container2{
+		max-width: 630px;
+		height: 1600px;
+		.tekst{
+			margin-left: 0px;
+		}
+	}
+}

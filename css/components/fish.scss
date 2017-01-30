@@ -1,8 +1,31 @@
 .fishHead{
   width: 200px;
   height: 200px;
-  background: url("../img/fish_head.png");
+  background: url("../images/fish_head.png");
   background-size: 100%;
   display: block;
   margin: 0 auto;
+}
+.fishTail{
+  width: 200px;
+  height: 200px;
+  background: url("../images/fish_tail.png");
+  background-size: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.fishy{
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 150px;
+  div{
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/vis_7.png");
+    background-size: contain;
+    &:hover{
+      background-image: url("../images/vis_6.png");
+    }
+  }
 }
