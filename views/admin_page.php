@@ -22,7 +22,6 @@ if(!isset($_SESSION['user'])){
 				$title = $article_list['title'];
 				$summary = $article_list['summary'];
 				$date = $article_list['date'];
-				$full_name = $article_list['full_name'];
 				$id = $article_list['id'];
 				echo "<tr>";
 				echo "<td width='80px'>".$title."</td>";

@@ -8,18 +8,8 @@
 	$id = (empty($_GET['id'])) ? '' : $_GET['id'];
  	switch ($action) {
     	case 'send_article':
-			// require 'models/session.php';
 			include 'models/send_article.php';
       		break;
-	  	case 'input_form':
-			// require 'models/session.php';
-			include 'views/admin_input.php';
-			break;
-		case 'edit_form':
-			// require 'models/session.php';
-			require 'models/select_single_article.php';
-			include 'views/article_edit.php';
-			break;
 	  	case 'input_form':
 			include 'views/admin_input.php';
 			break;
@@ -60,14 +50,14 @@
 			include 'models/image_upload.php';
 			break;
     case 'full_page':
-      include "models/select_single_article.php";
-      include "models/select_images.php";
-      include "views/verhaal.php";
-      break;
+		include "models/select_single_article.php";
+      	include "models/select_images.php";
+      	include "views/verhaal.php";
+      	break;
     default:
-      include "models/select_all_images.php";
-      include "models/select_articles.php";
-      include "views/fish.html";
+      	include "models/select_all_images.php";
+      	include "models/select_articles.php";
+      	include "views/fish.html";
     	include 'views/home.php';
     	break;
   }
