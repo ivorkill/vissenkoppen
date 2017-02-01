@@ -8,9 +8,8 @@ $(document).ready(function(){
       number = $(article).data("content") || $(article).parent().data("content");
       container = $("div").find("[data-container='" + number + "']");
       $(container).toggleClass("open");
-      $(container).children().toggleClass("hidden");
       $(".article").not(container).removeClass("open");
-      $(".article").not(container).children().addClass("hidden");
+      // $(".article").not(container).children().addClass("hidden");
       // console.log(article);
       // $(container).children(".text").children("h1").css("line-height","60px");
       // $(".article").not(container).children(".text").children("h1").css("line-height","30px");

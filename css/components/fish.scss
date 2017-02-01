@@ -1,21 +1,23 @@
 .fishHead{
-  width: 200px;
-  height: 200px;
-  background: url("../images/fish_head.png");
+  width: 350px;
+  height: 350px;
+  background: url("../images/fish_head4.png");
   background-size: 100%;
   display: block;
   margin: 0 auto;
+  margin-top: 50px;
 }
 .fishTail{
-  width: 200px;
-  height: 200px;
-  background: url("../images/fish_tail.png");
+  width: 350px;
+  height: 350px;
+  background: url("../images/fish_tail2.png");
   background-size: 100%;
   display: block;
   margin: 0 auto;
 }
 .fishy{
   margin: auto;
+  margin-top: -30px;
   display: block;
   width: 300px;
   height: 150px;

@@ -23,6 +23,7 @@
 		max-width: 630px;
 		width: 630px;
 		float: left;
+		padding: 0;
 		.image{
 			padding: 5px;
 			float: left;
@@ -43,7 +44,7 @@
 	}
 	.tekst{
 		max-width: 630px;
-		width: 630px;
+		width: 535px;
 		padding: 40px;
 		margin-top: 7px;
 		margin-left: 50px;
@@ -60,6 +61,7 @@
 		max-width: 630px;
 		height: 1600px;
 		.tekst{
+			float: right;
 			margin-left: 0px;
 		}
 	}

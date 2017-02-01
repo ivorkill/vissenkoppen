@@ -20,12 +20,20 @@
 			require 'models/select_single_article.php';
 			include 'views/article_edit.php';
 			break;
+	  	case 'input_form':
+			include 'views/admin_input.php';
+			break;
+		case 'edit_form':
+			require 'models/select_single_article.php';
+			$title = $article['title'];
+			$summary = $article['summary'];
+			$article = $article['article'];
+			include 'views/article_edit.php';
+			break;
 		case 'edit_article':
-			// require 'models/session.php';
 			include 'models/edit_article.php';
 			break;
 		case 'login':
-			// require 'models/session.php';
 			include 'views/admin_login.php';
 			break;
 		case 'login_admin':

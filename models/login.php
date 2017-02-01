@@ -10,6 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	if($count == 1){
 		$_SESSION['user'] = $admin;
 		$_SESSION['id'] = $session;
+		$_SESSION['user'] = $session;
 		header("Location: ?action=admin_page");
 	}
 	else{

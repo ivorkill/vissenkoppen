@@ -1,10 +1,9 @@
 <?php
 $valid_formats = array("jpg", "png", "gif", "zip", "bmp");
-$max_file_size = 1024*100; //100 kb
+$max_file_size = 1024*1024; //5 mb
 $path = "uploads/"; // Upload directory
 $count = 0;
 $article_id = (empty($_GET['id'])) ? '' : $_GET['id'];
-
 if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST"){
 	// Loop $_FILES to exeicute all files
 	foreach ($_FILES['images']['name'] as $f => $name) {

@@ -16,7 +16,7 @@ for ($i=1; $i < $amount + 1; $i++) {
     <div class='text hidden' data-content=".$i.">
       <h1>".$articles[$i - 1]["title"]."</h1>
       <p>".$articles[$i - 1]["summary"]."</p>
-      <a href='?action=full_page&id=".$articles[$i - 1]["id"]."'>Lees meer...</a>
+      <a href='?action=full_page&id=".$articles[$i - 1]["id"]."'><img width='50%' src='images/leesmeer_button.png' alt='Lees meer'></a>
     </div>
   </div>";
 }

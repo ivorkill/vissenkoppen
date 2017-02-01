@@ -1,8 +1,8 @@
 <?php
 // it will never let you open index(login) page if session is set
-// if(!isset($_SESSION['user'])){
-//    header("location: ?action=login");
-// }
+if(!isset($_SESSION['user'])){
+   header("location: ?action=login");
+}
 foreach ($single_article as $article_list) {
 $title = $article_list['title'];
 $summary = $article_list['summary'];

@@ -1,8 +1,8 @@
 <?php
 // it will never let you open index(login) page if session is set
-// if(!isset($_SESSION['user'])){
-//    header("location: ?action=login");
-// }
+if(!isset($_SESSION['user'])){
+   header("location: ?action=login");
+}
 ?>
 <a href="?action=admin_page"><img src="images/terug_1.png" onmouseover="this.src='images/terug_2.png'" onmouseout="this.src='images/terug_1.png'" width="180px;" alt="ga terug" title="Ga terug"/></a>
 <div class="delete">
