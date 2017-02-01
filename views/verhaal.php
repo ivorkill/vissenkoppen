@@ -4,7 +4,7 @@
 	</a>
 <?php
 if (isset($images) && isset($single_article)) {
-	echo '<h1 class="title">'.$single_article["title"].'</h1>';
+	echo '<h1 class="title">'.$single_article[0]["title"].'</h1>';
 ?>
 <div class="container2">
 	<div class="kaders">
