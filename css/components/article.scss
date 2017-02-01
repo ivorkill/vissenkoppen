@@ -35,6 +35,9 @@
       &.text{
         background-color: $Color6;
         float: right;
+        p,a{
+          padding: 10px;
+        }
       }
     }
     &:hover{

@@ -15,9 +15,9 @@
 	}
 }
 .container2{
-	max-width: 1400px;
+	max-width: 1300px;
 	margin: auto;
-	padding: 50px;
+	// padding: 50px;
 	height: 800px;
 	.kaders{
 		max-width: 630px;
@@ -27,15 +27,13 @@
 		.image{
 			padding: 5px;
 			float: left;
-			width: 200px;
-			height: 115px;
 			overflow: hidden;
 			img{
 				width: 200px;
 			}
 			&:first-child{
 				width: 620px;
-				height: 345px;
+				height: auto;
 				img{
 					width: 620px;
 				}
@@ -56,13 +54,53 @@
 		line-height: 23px;
 	}
 }
-@media (max-width: 1500px) {
+@media (max-width: 1310px) {
 	.container2{
-		max-width: 630px;
+		max-width: 1110px;
+		.tekst{
+			width: 480px;
+		}
+		.kaders{
+			max-width: 480px;
+			width: 480px;
+			.image{
+				img{
+					width: 150px;
+				}
+				&:first-child{
+					width: 470px;
+					height: auto;
+					img{
+						width: 470px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1110px) {
+	.container2{
+		max-width: 590px;
 		height: 1600px;
 		.tekst{
-			float: right;
-			margin-left: 0px;
+			width: 495px;
+			margin-left:5px;
+		}
+		.kaders{
+			max-width: 590px;
+			width: 590px;
+			.image{
+				img{
+					width: 185px;
+				}
+				&:first-child{
+					width: 585px;
+					height: auto;
+					img{
+						width: 575px;
+					}
+				}
+			}
 		}
 	}
 }

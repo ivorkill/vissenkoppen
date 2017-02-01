@@ -18,8 +18,7 @@ h2, h3, h4, h5, h6 {
   padding: 10px; }
 
 p, a {
-  font-family: "Lato", sans-serif, sans-serif;
-  padding: 10px; }
+  font-family: "Lato", sans-serif, sans-serif; }
 
 .header {
   background-color: #2c6172; }
@@ -148,8 +147,8 @@ footer {
   to {
     transform: rotate(360deg) translatey(-1.5em) rotate(-360deg); } }
 .fishHead {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   background: url("../images/fish_head4.png");
   background-size: 100%;
   display: block;
@@ -157,9 +156,9 @@ footer {
   margin-top: 50px; }
 
 .fishTail {
-  width: 350px;
-  height: 350px;
-  background: url("../images/fish_tail2.png");
+  width: 300px;
+  height: 300px;
+  background: url("../images/fish_tail4.png");
   background-size: 100%;
   display: block;
   margin: 0 auto; }
@@ -211,6 +210,8 @@ footer {
       .container .article div.text {
         background-color: #f3f1f0;
         float: right; }
+        .container .article div.text p, .container .article div.text a {
+          padding: 10px; }
     .container .article:hover {
       cursor: pointer; }
     .container .article.open {
@@ -236,9 +237,8 @@ footer {
     background-image: url("../images/terug_2.png"); }
 
 .container2 {
-  max-width: 1400px;
+  max-width: 1300px;
   margin: auto;
-  padding: 50px;
   height: 800px; }
   .container2 .kaders {
     max-width: 630px;
@@ -248,14 +248,12 @@ footer {
     .container2 .kaders .image {
       padding: 5px;
       float: left;
-      width: 200px;
-      height: 115px;
       overflow: hidden; }
       .container2 .kaders .image img {
         width: 200px; }
       .container2 .kaders .image:first-child {
         width: 620px;
-        height: 345px; }
+        height: auto; }
         .container2 .kaders .image:first-child img {
           width: 620px; }
   .container2 .tekst {
@@ -271,13 +269,38 @@ footer {
     font-size: 18px;
     line-height: 23px; }
 
-@media (max-width: 1500px) {
+@media (max-width: 1310px) {
   .container2 {
-    max-width: 630px;
+    max-width: 1110px; }
+    .container2 .tekst {
+      width: 480px; }
+    .container2 .kaders {
+      max-width: 480px;
+      width: 480px; }
+      .container2 .kaders .image img {
+        width: 150px; }
+      .container2 .kaders .image:first-child {
+        width: 470px;
+        height: auto; }
+        .container2 .kaders .image:first-child img {
+          width: 470px; } }
+@media (max-width: 1110px) {
+  .container2 {
+    max-width: 590px;
     height: 1600px; }
     .container2 .tekst {
-      float: right;
-      margin-left: 0px; } }
+      width: 495px;
+      margin-left: 5px; }
+    .container2 .kaders {
+      max-width: 590px;
+      width: 590px; }
+      .container2 .kaders .image img {
+        width: 185px; }
+      .container2 .kaders .image:first-child {
+        width: 585px;
+        height: auto; }
+        .container2 .kaders .image:first-child img {
+          width: 575px; } }
 .kader {
   text-align: center;
   width: 300px;
