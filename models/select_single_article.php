@@ -1,5 +1,4 @@
 <?php
-$id = (empty($_GET['id'])) ? '' : $_GET['id'];
 	$sql = "SELECT * FROM articles WHERE id = $id";
 	// $result = $mysqli->query($sql);
 
