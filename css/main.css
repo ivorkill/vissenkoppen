@@ -224,7 +224,8 @@ footer {
 
 /* CSS Document */
 .title {
-  color: #f3f1f0; }
+  color: #f3f1f0;
+  padding-bottom: 2em; }
 
 .back {
   width: 300px;
